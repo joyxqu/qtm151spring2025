@@ -36,6 +36,7 @@ panel on the left:
 
 Delete existing table
 -- SQLBook: Code
+-- Active: 1744807139149@@127.0.0.1@5432@postgres
 -- Active: 1710903290079@@127.0.0.1@5432@postgres
 -- If the table already exists we can drop it:
 -- If it doesn't exist nothing happens
@@ -99,7 +100,9 @@ Try it yourself!
 -- Add your name/nationality and your neighbors'
 -- Select a new driver id (needs to be unique)
 -- Make sure to deparate arguments by a semicolon!
+INSERT INTO drivers  VALUES (16, 'Charles Leclerc', 'Monaco',8);
 
+INSERT INTO drivers  VALUES (63, 'George Russell', 'British',3);
 
 
 
@@ -188,7 +191,8 @@ Try it yourself!
 with more than 60 victories
 -- SQLBook: Code
 -- Write your own code!
-
+SELECT driver_id, nationality FROM drivers 
+WHERE victories > 60;
 
 
 -- SQLBook: Markup
